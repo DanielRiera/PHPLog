@@ -2,18 +2,25 @@
 
 Custom static class for register messages with simple methods.
 
+## INSTALLATION
+
+**With Composer**
+
+    composer require danielriera/phplog
+
 ## CONSTANTS
----
-#### **LOG_DEFAULT_FILE**
+
+**LOG_DEFAULT_FILE**
 Default file if $type is not defined, default: 'user'
-#### **LOG_FOLDER**
+
+**LOG_FOLDER**
 Folder on put files, default: '/'
-#### **LOG_DIVIDE_ELEMENT**
+
+**LOG_DIVIDE_ELEMENT**
 If defined divide files by $element, default: No defined 
 
 ## API
----
-### **LOG::add($msg, $element, $type)**
+##### **LOG::add(msg, element, type)**
 
 - **msg**: String | Array | Object to register.
 - **element**: String or Integer id, default: false.
