@@ -1,0 +1,7 @@
+{
+    "name": "danielriera/phplog",
+    "description": "Register LOG messages on structure",
+    "require": {
+        "php": ">=5.4"
+    }
+}
