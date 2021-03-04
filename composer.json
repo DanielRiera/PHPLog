@@ -4,5 +4,16 @@
     "require": {
         "php": ">=5.4"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Riera",
+            "email": "danielriera.p@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DanielRiera\\LOG\\": "src/"
+        }
+    }
 }

@@ -1,4 +1,6 @@
 <?php
+namespace DanielRiera\LOG;
+
 if(!class_exists('LOG')) {
 
     class LOG {
@@ -23,6 +25,12 @@ if(!class_exists('LOG')) {
             
             $y = date('Y');
             $m = date('m');
+
+            //Create htaccess file if no exist
+            if(!file_exists($root . "logs/.htaccess")) {
+                file_put_contents($root . "logs/.htaccess", 'Deny from all');
+            }
+
             $fileDest = $root . "logs/{$y}/{$m}/";
 
             if(!file_exists($fileDest)) {
